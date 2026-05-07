@@ -86,3 +86,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, barrierearm, balkon
 hash: 9efb048e2c7e5b6a1e4155ba1dff5fd6bb00311d4fff87aa6de9407834a74fff
 
+2026-05-07 12:18:39,383 [INFO] flats: Application sent:
+City-Apartment in Mitte
+zip code: 10179
+flat size: 26.84
+rooms: 1.0
+property attributes: bad mit dusche, aufzug, neubau
+hash: 71918d7d215f24266328301ffd1b0513fa35bfb16e50ed5087952e9e98014440
+
