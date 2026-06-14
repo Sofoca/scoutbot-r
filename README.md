@@ -56,7 +56,7 @@ To fork the repository, click on the _Fork_ button at the top right of the repos
 
 ![Fork Repo](images/demo_forking.png)
 
-This opens a new window. You do not need to change anything here, just click on "Create Fork".
+This opens a new window. **Make sure to uncheck the "Copy the `main` branch only" option** before clicking "Create Fork". This is important because the bot uses a separate `log` branch to persist the application log across runs — if that branch is missing from your fork, the workflow will fail on the very first run.
 
 **2. In your forked repository, go to _Settings_ -> _Secrets and variables_ -> _Actions_ -> _Secrets_ and set up a new _Repository secret_ called `USER_CONFIG`.**
 
