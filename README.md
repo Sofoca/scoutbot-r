@@ -29,7 +29,15 @@ WBM generally aims for a 1:1 room/tenant ratio, so please set a realistic minimu
 
 1. Fork this repository
 2. In your forked repository, go to _Settings_ -> _Secrets and variables_ -> _Actions_ -> _Secrets_ and set up a new _Repository secret_ called `USER_CONFIG`. Paste the content of the sample config.yaml file in the window and adapt to your needs (replace email, name, search criteria).
-3. _(Optional)_ **Set up Telegram notifications**: create a Telegram bot via [@BotFather](https://t.me/BotFather) to get a bot token, then find your chat ID (e.g. via [@userinfobot](https://t.me/userinfobot)). Add two more repository secrets: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. When both secrets are present, you will receive a Telegram message every time an application is submitted.
+3. _(Optional)_ **Set up Telegram notifications**: create a Telegram bot via [@BotFather](https://t.me/BotFather) to get a bot token. Notifications can be sent to your personal chat or to a group chat. Add two repository secrets: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. When both secrets are present, you will receive a Telegram message every time an application is submitted.
+
+   **Finding your chat ID:**
+   - _Personal_: message [@userinfobot](https://t.me/userinfobot) or [@RawDataBot](https://t.me/RawDataBot) — they reply with your chat ID instantly.
+   - _Group_: add [@RawDataBot](https://t.me/RawDataBot) to the group, note the (negative) chat ID from its reply, then remove the bot. Alternatively, use the bot token URL method below.
+   - _Via your bot's token_: send a message to your bot (or in the group), then open `https://api.telegram.org/bot<TOKEN>/getUpdates` in your browser and look for `"chat":{"id": ...}` in the response.
+
+   **For group notifications**: by default Telegram bots cannot read group messages (privacy mode is on), which means the `getUpdates` method above won't return any results. To fix this, go to [@BotFather](https://t.me/BotFather), send `/setprivacy`, select your bot, and choose _Disable_. After that, send a message in the group and open the `getUpdates` URL to get the chat ID. You can re-enable privacy mode afterwards — the bot only needs to _send_ messages to the group, not read them.
+
 4. Remove comments in front of "schedule" and "- cron: '_/5 6-19 _ \* 1-5'" in the file `.github/workflows/run-scraper.yml`
 5. Go to repository _Actions_ tab and verify that everything is running correctly. It may take a few minutes until the scheduled run is triggered, but you can also trigger the run manually if you don't want to wait. Once the first run is complete, click on the run, scroll down to _Artifacts_ and download logs (the artifact is called `scraper-logs`). `flats.log` contains flats that have been applied to. This is empty if no flats were found. `app.log` logs scraping process and flats that did not match criteria.
 6. Don't forget to delete your fork, remove the file `.github/workflows/run-scraper.yml` or comment out the "schedule" and "- cron: '_/5 6-19 _ \* 1-5'" bit when your flat search is over!
