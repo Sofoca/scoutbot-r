@@ -44,6 +44,60 @@ WBM generally aims for a 1:1 room/tenant ratio, so please set a realistic minimu
 
 Although the workflow is scheduled to run every 5 minutes, GitHub Actions may experience server-side delays, so the actual interval is closer to 15 minutes.
 
+## Reliable Triggering via Cloudflare Worker (optional)
+
+GitHub's scheduled Actions are known to be delayed, sometimes by 10–30 minutes or more. A more reliable alternative is to trigger the workflow externally using a [Cloudflare Worker](https://workers.cloudflare.com/), which is free for up to 100,000 requests/day and has a cron scheduler that fires on time. The worker sends a `workflow_dispatch` event to the GitHub Actions API, which triggers the scraper immediately.
+
+**Setup:**
+
+1. Create a free Cloudflare account and a new Worker at [dash.cloudflare.com](https://dash.cloudflare.com).
+2. Paste the following worker script:
+
+```js
+// Trigger a single GitHub Actions workflow dispatch
+async function triggerWorkflow(workflow, env) {
+  const res = await fetch(
+    `https://api.github.com/repos/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>/actions/workflows/${workflow}/dispatches`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `token ${env.GITHUB_PAT}`,
+        Accept: "application/vnd.github.v3+json",
+        "Content-Type": "application/json",
+        "User-Agent": "scoutbot-trigger-worker",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    },
+  );
+  console.log(`Triggered ${workflow}: ${res.status}`);
+  return { workflow, status: res.status };
+}
+
+// Add random jitter 0-45s to avoid always hitting at the exact same second
+async function triggerWithJitter(workflow, env) {
+  const jitterSec = Math.floor(Math.random() * 46);
+  await scheduler.wait(jitterSec * 1000);
+  return triggerWorkflow(workflow, env);
+}
+
+export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(triggerWithJitter("run-scraper.yml", env));
+  },
+  async fetch(request, env, ctx) {
+    ctx.waitUntil(triggerWithJitter("run-scraper.yml", env));
+    return new Response(
+      "Triggered! run-scraper.yml will fire after random 0-45s jitter.",
+    );
+  },
+};
+```
+
+3. Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_REPO>` with your fork's details.
+4. Create a [GitHub Personal Access Token (PAT)](https://github.com/settings/tokens) with the `repo` scope (or `actions:write` with fine-grained tokens). Add it as a Worker secret named `GITHUB_PAT` under _Settings_ -> _Variables and secrets_ in the Worker dashboard.
+5. Under _Triggers_ -> _Cron_, add a cron expression. `2/3 * * * *` fires every 3 minutes starting at 2 minutes past each hour, which gives a comfortable overlap with the GitHub schedule without hammering the API.
+6. Make sure the `schedule` trigger in `.github/workflows/run-scraper.yml` remains commented out — the Worker replaces it. The `workflow_dispatch` trigger must stay enabled (it already is by default).
+
 _Your email address, full name and household net income will be sent to GitHub servers if you use this bot. However, since your data is stored in a repository secret, it is encrypted before it reaches GitHub (see [GitHub documentation pages](https://docs.github.com/en/actions/concepts/security/secrets) for more information). Since the rent levels of flats applied for could allow inferences about your net household income, this information is removed from the flat applications log file, which is public if the repository is public._
 
 ## Detailed Usage Instructions
