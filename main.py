@@ -15,6 +15,20 @@ from wbmbot import User, ConfigLoader, FlatScraper, ApplicationManager
 
 
 def main():
+    # TEMPORARY TEST: Send a test Telegram notification
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    chat_id = os.getenv("TELEGRAM_CHAT_ID")
+    if token and chat_id:
+        try:
+            requests.post(
+                f"https://api.telegram.org/bot{token}/sendMessage",
+                data={"chat_id": chat_id, "text": "🧪 Test notification from scoutbot-r"},
+                timeout=10
+            )
+            logger.info("Test Telegram notification sent")
+        except Exception as e:
+            logger.warning(f"Failed to send test Telegram notification: {e}")
+
     # Load or interactively collect user data/configuration
     user_input = ConfigLoader(config_var="USER_CONFIG")
     user_data = user_input.load_user_data()
