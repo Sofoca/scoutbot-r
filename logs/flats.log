@@ -14,3 +14,11 @@ rooms: 2.0
 property attributes: bad mit dusche, aufzug, einbauküche, offene küche, balkon
 hash: 6028d49f2ae6965e7e9c87721c0a36ec1fd25e521651a6ac158786454de3404a
 
+2026-06-16 06:48:13,103 [INFO] flats: Application sent:
+3-Zimmer-Wohnung
+zip code: 10117
+flat size: 74.6
+rooms: 3.0
+property attributes: bad mit wanne, aufzug, barrierearm, balkon
+hash: 64b0e7206ba6f1587f66ea42c455c12ee6cb2160b8cdcc3ecabc1da87b2306ae
+
