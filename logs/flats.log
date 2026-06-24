@@ -62,3 +62,19 @@ rooms: 3.0
 property attributes: bad mit wanne, aufzug
 hash: ff73056d06f28889db467f16813800424f666a004d2f98846024f95c014a852c
 
+2026-06-24 08:27:28,276 [INFO] flats: Application sent:
+4-Zimmer-Wohnung mit WBS 160-220
+zip code: 10179
+flat size: 84.74
+rooms: 4.0
+property attributes: bad mit wanne, aufzug
+hash: c59a64a666cab6fe58b6d85b5c3611ea3b9263c54611441bd510f45361816076
+
+2026-06-24 08:27:39,742 [INFO] flats: Application sent:
+4-Zimmer-Wohnung in Mitte mit WBS 160-220
+zip code: 10179
+flat size: 84.74
+rooms: 4.0
+property attributes: bad mit wanne, aufzug
+hash: e9a8a98a9a33808c5e5593fca6f52ac438397358aaef08a8a34223074311c2db
+
