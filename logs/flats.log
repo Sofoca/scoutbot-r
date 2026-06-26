@@ -142,3 +142,11 @@ rooms: 3.0
 property attributes: bad mit wanne, aufzug
 hash: 37430705e275d52b56f9506c255c0024e306abd3ae859f4010540c332a3bb5cf
 
+2026-06-26 20:48:05,734 [INFO] flats: Application sent:
+4-Zimmer-Wohnung in Mitte
+zip code: 10119
+flat size: 77.39
+rooms: 4.0
+property attributes: balkon
+hash: 90ba70bf1dfea98e6ad2623a894b24d33e1be68867cb717fcf7fc4e01cb8b84e
+
