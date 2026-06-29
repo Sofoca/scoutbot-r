@@ -158,3 +158,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, barrierearm, balkon
 hash: c61614aae5bd8cd65381d08465c9c1a7bf3f4d9ef90157d09c43a3cec46ecc5e
 
+2026-06-29 15:48:10,080 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 53.56
+rooms: 3.0
+property attributes: bad mit wanne, aufzug
+hash: 6c275f49436f961d59b9f97e2cdf8007a208720071d0dbe58b3df10da8bc2767
+
