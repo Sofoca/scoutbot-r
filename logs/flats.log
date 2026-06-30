@@ -174,3 +174,11 @@ rooms: 2.0
 property attributes: bad mit wanne, bad mit fenster, offene küche, abstellraum
 hash: b521202a9e495de0d6aca44d95121dc22225522148ca3a963383c27ef42640e5
 
+2026-06-30 15:29:55,253 [INFO] flats: Application sent:
+Maisonette 1-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 62.89
+rooms: 1.0
+property attributes: bad mit wanne, aufzug
+hash: 93d592c9f7b28591aeb7be774ed453dd4188ea5f19216e98fa027e2d1d9811d2
+
