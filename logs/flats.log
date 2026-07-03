@@ -214,3 +214,11 @@ rooms: 2.0
 property attributes: bad mit wanne, offene küche
 hash: 5215952337eee578826449ec68cee55a5ee69f2909cbe6ef3d00458744e845cd
 
+2026-07-03 13:48:40,945 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Mitte
+zip code: 10119
+flat size: 52.16
+rooms: 2.0
+property attributes: bad mit wanne, offene küche
+hash: 0ccd2d413e1684d321179c7f0fae735c63d6f68584805aaa604bfa7714131464
+
