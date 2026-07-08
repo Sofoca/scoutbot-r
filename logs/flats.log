@@ -230,3 +230,11 @@ rooms: 3.0
 property attributes: bad mit wanne, bad mit fenster, aufzug
 hash: 40ad7cc6369b417ed908d969fe96961534ad920067a71661b08c05296cb7b34f
 
+2026-07-08 12:18:51,245 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Mitte am Gendarmenmarkt
+zip code: 10117
+flat size: 56.52
+rooms: 2.0
+property attributes: bad mit wanne
+hash: edd0cc2c4ceee437fd3d8200c07b687e23740e3a9e63da43fd7fef8b33d8cf11
+
