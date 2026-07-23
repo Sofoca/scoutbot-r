@@ -294,3 +294,19 @@ rooms: 3.0
 property attributes: bad mit wanne, aufzug, rolladen
 hash: d3978203071c286664fb2f32b2b1f93189dbc8ec064f4bc3d8c6fa8df78d2e9b
 
+2026-07-23 15:48:15,386 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Mitte
+zip code: 10178
+flat size: 78.34
+rooms: 3.0
+property attributes: bad mit wanne, aufzug, barrierearm, balkon
+hash: 206bce77fb3ad4e85dd19db901d4b16a11ac2eb3146b20e8b5d44c0cfb481d0d
+
+2026-07-23 15:48:23,076 [INFO] flats: Application sent:
+1-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 44.95
+rooms: 1.0
+property attributes: bad mit wanne, bad mit fenster, abstellraum
+hash: 5a6748bf1920a997a97d13f6dbe65a455df8acbcb5e5105d9903988f21b2ea2d
+
