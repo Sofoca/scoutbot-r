@@ -374,3 +374,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, offene küche, barrierearm, balkon
 hash: 9897c3a6e4f7cfa0916d2b1fc752e999d93d14c28add3fcd52eadd8f363e364f
 
+2026-07-27 12:38:42,686 [INFO] flats: Application sent:
+Blick auf den Fernsehturm 3-Zimmer-Wohnung in Mitte
+zip code: 10178
+flat size: 65.24
+rooms: 3.0
+property attributes: bad mit wanne, aufzug, barrierearm, balkon
+hash: 89494b45f3b775440b123da785d7f9be7f455899e354b907d0c9b00fca0f05c9
+
