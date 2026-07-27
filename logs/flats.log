@@ -366,3 +366,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, offene küche, barrierearm, balkon
 hash: c08db22e6b4b68a6f222a22182cdd2138f8c9a9fe12e38e3112d82eea0e7927b
 
+2026-07-27 12:13:06,619 [INFO] flats: Application sent:
+2-Zimmer-Wohnung mit WBS 100/140
+zip code: 10117
+flat size: 47.74
+rooms: 2.0
+property attributes: bad mit wanne, aufzug, offene küche, barrierearm, balkon
+hash: 9897c3a6e4f7cfa0916d2b1fc752e999d93d14c28add3fcd52eadd8f363e364f
+
