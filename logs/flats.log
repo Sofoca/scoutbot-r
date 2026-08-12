@@ -502,3 +502,11 @@ rooms: 2.0
 property attributes: bad mit wanne, balkon
 hash: f927337e32ed2d1822e683f1f396a89c7330dce3bb754313140b57ceca2d78f8
 
+2026-08-12 08:48:44,824 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Wedding
+zip code: 13351
+flat size: 60.88
+rooms: 3.0
+property attributes: bad mit wanne, rolladen
+hash: 76f4dbc9824ab2abdd6047fd7f602c971c328118ad79c88f4cbc00bb5a7306a7
+
