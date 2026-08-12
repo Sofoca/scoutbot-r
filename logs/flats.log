@@ -486,3 +486,19 @@ rooms: 3.0
 property attributes: bad mit wanne, bad mit fenster, balkon
 hash: 4212e2e4a8f06879c6f6de034b4766cbad4fa5384b73a36f08f26d86bfd4094f
 
+2026-08-12 07:39:13,970 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Mitte
+zip code: 10179
+flat size: 62.52
+rooms: 3.0
+property attributes: bad mit wanne, aufzug, barrierearm, balkon
+hash: fba730af04710d278a0b303a768969f2310fd7c0480ccbf337f70cfff4134354
+
+2026-08-12 07:39:25,824 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Wedding
+zip code: 13351
+flat size: 45.87
+rooms: 2.0
+property attributes: bad mit wanne, balkon
+hash: f927337e32ed2d1822e683f1f396a89c7330dce3bb754313140b57ceca2d78f8
+
