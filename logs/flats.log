@@ -518,3 +518,19 @@ rooms: 3.0
 property attributes: bad mit wanne, aufzug
 hash: ceaec7ad5c71120d550371a446721e6b616eef01ee22f6304772b4ded61620cc
 
+2026-08-13 15:49:00,245 [INFO] flats: Application sent:
+4-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 65.09
+rooms: 4.0
+property attributes: bad mit wanne, aufzug
+hash: c38f35e899b40e1eb247dbf6ee7db88fe5a490ba802a0ea260891cdfe9c2380a
+
+2026-08-13 15:49:14,861 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 54.11
+rooms: 3.0
+property attributes: bad mit wanne, aufzug
+hash: 827b5cb945eacd9d1bc5a71f79e11a49dfb3d3f888629bb413db85b3e0ec9a20
+
