@@ -542,3 +542,11 @@ rooms: 2.0
 property attributes: bad mit wanne, bad mit fenster, rolladen
 hash: d931888a69e59c2ea714b0792c6e798d1ebf6151fd5c1cf3c1ec114dd164d746
 
+2026-08-14 09:48:48,009 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Kreuzberg
+zip code: 10969
+flat size: 63.84
+rooms: 3.0
+property attributes: bad mit wanne, bad mit fenster, aufzug, balkon
+hash: 89868df0848d1bf5cc78c7a205c6a4a922afa4157466b986277e975665b936bd
+
