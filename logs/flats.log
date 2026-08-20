@@ -638,3 +638,11 @@ rooms: 2.0
 property attributes: bad mit wanne, bad mit fenster, aufzug, balkon
 hash: 724cccbb1715b3643e238348221807fdebb0d34181f770a7b6cbdfb2115c6d72
 
+2026-08-20 12:47:56,552 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Mitte
+zip code: 10179
+flat size: 63.45
+rooms: 2.0
+property attributes: bad mit wanne, balkon
+hash: 6510fcc60e0b1e7b920c203ec83c1b6e18abc59a1158af2e8298bc108a7221b0
+
