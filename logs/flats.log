@@ -646,3 +646,11 @@ rooms: 2.0
 property attributes: bad mit wanne, balkon
 hash: 6510fcc60e0b1e7b920c203ec83c1b6e18abc59a1158af2e8298bc108a7221b0
 
+2026-08-20 15:49:20,158 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Kreuzberg
+zip code: 10999
+flat size: 57.5
+rooms: 2.0
+property attributes: bad mit wanne, bad mit fenster
+hash: 8d914eb78e199ddb0bd2ed34c6af68de70ac8b30e4d1c74bddd9672645b8f120
+
