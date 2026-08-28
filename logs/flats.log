@@ -726,3 +726,11 @@ rooms: 2.0
 property attributes: bad mit dusche
 hash: ad03370138d3fdeb358224e5d7884dc402a3ef4df1efceee69dfa6d32b480946
 
+2026-08-28 05:39:31,194 [INFO] flats: Application sent:
+3-Zimmer-Wohnung in Tiergarten
+zip code: 10557
+flat size: 84.04
+rooms: 3.0
+property attributes: bad mit wanne, balkon
+hash: 9a5f30624951efbb5a098561bf3dd287b65a943ce9d1ac129a8802f3320f7f41
+
