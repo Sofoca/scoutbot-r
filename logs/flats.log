@@ -766,3 +766,11 @@ rooms: 2.0
 property attributes: bad mit dusche, balkon, abstellraum
 hash: 2152daacfc65eed39c0edd0d4226cd5ce637c163db9f1ee7b9e917e96d95531a
 
+2026-08-28 14:15:44,739 [INFO] flats: Application sent:
+4-Zimmer-Wohnung in Friedrichshain
+zip code: 10247
+flat size: 84.05
+rooms: 4.0
+property attributes: bad mit wanne, balkon, abstellraum
+hash: 0740b72231081f9347e4ac7437df2e8f24b98203ae104318c06adcbab6745256
+
