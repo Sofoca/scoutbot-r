@@ -806,3 +806,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, balkon
 hash: 4578d02ea469c6c5b1e6e32b48a2b22bbfcea342e14958925451f1d6f7769828
 
+2026-09-03 15:49:26,391 [INFO] flats: Application sent:
+2-Zimmer-Wohnung in Friedrichshain
+zip code: 10249
+flat size: 55.62
+rooms: 2.0
+property attributes: bad mit wanne, aufzug, balkon
+hash: c44107d83a35bd3d4c4b211168c828c4713670264417d7a27557a6952d92db34
+
