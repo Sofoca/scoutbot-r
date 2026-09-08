@@ -814,3 +814,11 @@ rooms: 2.0
 property attributes: bad mit wanne, aufzug, balkon
 hash: c44107d83a35bd3d4c4b211168c828c4713670264417d7a27557a6952d92db34
 
+2026-09-08 09:47:51,792 [INFO] flats: Application sent:
+1-Zimmer-Wohnung mit Balkon in Mitte
+zip code: 10178
+flat size: 24.08
+rooms: 1.0
+property attributes: bad mit dusche, aufzug, offene küche, balkon
+hash: a96f5c882c793798b7ef6628996f57011ef58c26417c75f082437b88e84c7681
+
